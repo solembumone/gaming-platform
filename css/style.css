@@ -146,8 +146,13 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background: linear-gradient( #000000, #4A2800 );
-  background-repeat: no-repeat;
+  background-size: 50%;
+  background-repeat: repeat;
 }
+
+/* .gardient-container {
+  background: linear-gradient( #000000, #4A2800 );
+} */
 
 
 .list-reset {
