@@ -1,0 +1,224 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+margin: 0;
+padding: 0;
+}
+
+ul, ol {
+margin: 0;
+padding: 0;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*fonts*/
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-light'),
+    url("../fonts/Poppins-Light.woff2") format("woff2"),
+    url("../fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-Regular'),
+    url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-Medium'),
+    url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-SemiBold'),
+    url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-Bold'),
+    url("../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-ExtraBold'),
+    url("../fonts/Poppins-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Poppins-ExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('Rubik-Regular'),
+    url("../fonts/Rubik-Regular.woff2") format("woff2"),
+    url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('Rubik-Medium'),
+    url("../fonts/Rubik-Medium.woff2") format("woff2"),
+    url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*root*/
+
+:root {
+  --text-color: #FFFFFF;
+  --dark-accent-color: #DC7000;
+  --light--accent-color: #FA9021;
+
+}
+
+
+
+
+/*globe*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  font-family: inherit;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 147px;
+}
+
+.gardient__container {
+  background: linear-gradient( #000000, #4A2800 );
+  height: 2000px;
+}
+
+/*header*/
+
+.header {
+  padding-top: 38px;
+  padding-bottom: 60px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.header__logo {
+ margin-right: auto;
+}
+
+.header__nav {
+  margin-right: 36px;
+}
+
+.header__nav-list {
+  gap: 88px;
+}
+
+.header__nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: auto;
+  color: var(--text-color);
+}
+
+.header__button {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: auto;
+  color: var(--text-color);
+  width: 132px;
+  height: 41px;
+  background-color: var(--light--accent-color);
+  border-radius: 6px;
+}
+
+
+
