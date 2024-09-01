@@ -226,6 +226,7 @@ body {
   border-radius: 6px;
 }
 
+
 /*hero*/
 
 .hero {
@@ -268,7 +269,7 @@ body {
   color: var(--text-color);
 }
 
-.hero__butoon {
+.hero__button {
   width: 195px;
   height: 53px;
   font-size: 16px;
@@ -278,6 +279,8 @@ body {
   background-color: var(--light--accent-color);
   border-radius: 40px;
 }
+
+
 
 .unity__icon {
   position: absolute;
@@ -458,13 +461,16 @@ body {
   align-items: center;
 }
 
-.offers__header {
+.section__header {
   margin: 0 auto;
-  margin-bottom: 99px;
-  max-width: 826px;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.offers__header {
+  margin-bottom: 99px;
+  max-width: 826px;
 }
 
 .offers__title {
@@ -515,5 +521,117 @@ body {
 }
 
 .offer__link {
-  /*нужна анимация для стрелки*/
+  transition: transform 0.23s ease-in-out;
+}
+
+.offer__link:hover  {
+  transform: translateX(5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/*projects*/
+
+.projects {
+  padding-top: 148px;
+  padding-bottom: 52px;
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.projects__header {
+  margin-bottom: 71px;
+}
+.projects__title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 188%;
+  color: var(--text-color);
+}
+
+.project__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 188%;
+  color: var(--text-color);
+}
+
+.projects__list {
+  margin-bottom: 72px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 223px) ;
+  column-gap: 26px;
+  row-gap: 33px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item2 {
+  grid-column-start:5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item3 {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.item4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.item5 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.item6 {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.projects__image {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__button {
+  width: 139px;
+  height: 57px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 188%;
+  color: var(--text-color);
+  text-transform: uppercase;
+  background-color: rgba(225, 225, 225, 0.11);
+  border-radius: 10px;
 }
