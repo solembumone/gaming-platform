@@ -181,6 +181,27 @@ body {
   padding: 0 147px;
 }
 
+.section__header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 188%;
+  color: var(--text-color);
+}
+
+.section__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 188%;
+  color: var(--text-color);
+}
+
 
 /*header*/
 
@@ -375,7 +396,7 @@ body {
   padding-bottom: 78px;
 }
 
-.besttseller__title {
+.besttseller__descr {
   margin: 0 auto;
   margin-bottom: 67px;
   max-width: 750px;
@@ -386,27 +407,14 @@ body {
   color: var(--text-color);
 }
 
-.bestseller__descr {
+.bestseller__header {
+  margin-left: 0;
   margin-bottom: 46px;
-  display: flex;
-  flex-direction: column;
   gap: 32px;
   max-width: 545px;
+  text-align: left;
 }
 
-.bestseller__name {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 188%;
-  color: var(--text-color);
-}
-
-.bestseller__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 188%;
-  color: var(--text-color);
-}
 
 .bestseller__img {
   position: relative;
@@ -461,12 +469,6 @@ body {
   align-items: center;
 }
 
-.section__header {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 
 .offers__header {
   margin-bottom: 99px;
@@ -475,17 +477,7 @@ body {
 
 .offers__title {
   margin-bottom: 25px;
-  font-size: 30px;
   font-weight: 700;
-  line-height: 188%;
-  color: var(--text-color);
-}
-
-.offers__subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 188%;
-  color: var(--text-color);
 }
 
 .offers__list {
@@ -539,26 +531,18 @@ body {
 .projects__container {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
 }
 
 .projects__header {
   margin-bottom: 71px;
 }
+
 .projects__title {
   margin-bottom: 15px;
-  font-size: 30px;
   font-weight: 700;
-  line-height: 188%;
-  color: var(--text-color);
 }
 
-.project__subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 188%;
-  color: var(--text-color);
-}
 
 .projects__list {
   margin-bottom: 72px;
@@ -635,3 +619,5 @@ align-items: center;
   background-color: rgba(225, 225, 225, 0.11);
   border-radius: 10px;
 }
+
+
