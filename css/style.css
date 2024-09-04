@@ -136,6 +136,7 @@ img {
   --text-color: #FFFFFF;
   --dark-accent-color: #DC7000;
   --light--accent-color: #FA9021;
+  --letter-spacing: 0.7px;
 
 }
 
@@ -228,7 +229,6 @@ body {
 }
 
 
-
 .header__nav {
   margin-right: 36px;
 }
@@ -242,7 +242,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 188%;
-  letter-spacing: 0.6px;
+  letter-spacing: var(--letter-spacing);
   color: var(--text-color);
 }
 
@@ -266,7 +266,7 @@ body {
   padding-bottom: 89px;
   background-image: url(../img/home/hero/joy_stick.png);
   background-repeat: no-repeat;
-  background-position:  top 0 right 286px;
+  background-position:  top 0 right 24.5%;
 }
 
 
@@ -297,7 +297,7 @@ body {
 }
 
 .hero__descr {
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   font-size: 16px;
   font-weight: 500;
   line-height: 200%;
@@ -320,8 +320,7 @@ body {
 .unity__icon {
   position: absolute;
   top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 44%;
 }
 
 .cry__icon {
@@ -356,6 +355,7 @@ body {
   font-size: 31px;
   font-weight: 700;
   line-height: 188%;
+  letter-spacing: var(--letter-spacing);
   color: var(--text-color);
 }
 
@@ -395,24 +395,24 @@ body {
   padding-left: 34px;
   font-family: 'Rubik', sans-serif;
   font-size: 22px;
-  font-weight: 188%;
+  font-weight: 500;
   color: var(--text-color);
   background-image: url(../img/home/trends/fire.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+
 }
 
 
 /*bestseller*/
 
 .bestseller {
-  padding-top: 65px;
-  padding-bottom: 78px;
+  padding-top: 71px;
+  padding-bottom: 152px;
 }
 
 .besttseller__descr {
   margin: 0 auto;
-  margin-bottom: 67px;
+  margin-bottom: 69px;
   max-width: 750px;
   font-size: 35px;
   font-weight: 600;
@@ -423,10 +423,13 @@ body {
 
 .bestseller__header {
   margin-left: 0;
-  margin-bottom: 46px;
-  gap: 32px;
+  margin-bottom: 56px;
   max-width: 545px;
   text-align: left;
+}
+
+.bestseller__title {
+  margin-bottom: 15px;
 }
 
 
@@ -453,7 +456,7 @@ body {
 
 .offers {
   padding-top: 93px;
-  padding-bottom: 92px;
+  padding-bottom: 85px;
   background-image: url(../img/home/offers/offers-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -485,7 +488,7 @@ body {
 
 
 .offers__header {
-  margin-bottom: 99px;
+  margin-bottom: 96px;
   max-width: 826px;
 }
 
@@ -496,7 +499,8 @@ body {
 
 .offers__list {
   flex-wrap: wrap;
-  gap: 100px;
+  column-gap: 107px;
+  row-gap: 53px;
   justify-content: center;
 }
 
@@ -520,6 +524,7 @@ body {
 }
 
 .offers__name {
+  margin-bottom: 24px;
   font-size: 16px;
   font-weight: 500;
   line-height: 188%;
@@ -538,17 +543,19 @@ body {
 /*projects*/
 
 .projects {
-  padding-top: 148px;
+  padding-top: 142px;
   padding-bottom: 52px;
 }
 
 .projects__container {
+  max-width: 1170px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .projects__header {
+  max-width: 497px;
   margin-bottom: 71px;
 }
 
@@ -559,7 +566,7 @@ body {
 
 
 .projects__list {
-  margin-bottom: 72px;
+  margin-bottom: 68px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 223px) ;
@@ -641,10 +648,14 @@ body {
   padding-bottom: 163px;
 }
 
+.subscription__container {
+  max-width: 1170px;
+}
+
 .subscription__header {
   margin-left: 0;
-  margin-bottom: 74px;
-  gap: 32px;
+  margin-bottom: 70px;
+  gap: 18px;
   max-width: 545px;
   text-align: left;
 }
@@ -724,7 +735,7 @@ body {
 
 .footer {
   position: relative;
-  padding-top: 73px;
+  padding-top: 80px;
   padding-bottom: 29px;
   background-color: #070707;
 }
@@ -745,7 +756,7 @@ body {
 
 .footer__info {
   display: flex;
-  margin-bottom: 82px;
+  margin-bottom: 84px;
 }
 
 .footer__text {
@@ -755,9 +766,12 @@ body {
   max-width: 340px;
 }
 
-.footer__image {
-  padding-top: 5px;
-  margin-bottom: 20px;
+.footer__logo {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--text-color);
+  text-transform: uppercase;
 }
 
 .footer__descr {
@@ -777,7 +791,7 @@ body {
 
 .footer__nav {
   margin-right: 83px;
-  gap: 109px;
+  gap: 129px;
 }
 
 
@@ -806,7 +820,8 @@ body {
 }
 
 .footer__socials {
-  align-self: flex-end;
+  padding-top: 117px;
+  /* align-self: flex-end; */
 }
 .socials {
   gap: 16px;
