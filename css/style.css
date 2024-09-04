@@ -620,4 +620,90 @@ body {
   border-radius: 10px;
 }
 
+/*subscription*/
+
+.subscription {
+  padding-top: 52px;
+  padding-bottom: 163px;
+}
+
+.subscription__header {
+  margin-left: 0;
+  margin-bottom: 74px;
+  gap: 32px;
+  max-width: 545px;
+  text-align: left;
+}
+
+.subscription__form {
+  background-color: #1C140F;
+}
+
+.form {
+  padding: 40px 50px 42px 56px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.form__text {
+  margin-right: auto;
+  max-width: 524px;
+}
+
+.form__title {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: auto;
+  color: var(--text-color);
+}
+
+.form__subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: auto;
+  color: var(--text-color);
+}
+
+.form__right {
+  padding-left: 36px;
+  padding-right: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 386px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.form__input {
+  font-family: inherit;
+  width: 231px;
+  border: none;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #898989;
+}
+
+.form__button {
+  width: 105px;
+  height: 37px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: auto;
+  color: var(--text-color);
+  background-color: var(--dark-accent-color);
+  border-radius: 8px;
+}
+
+
 
