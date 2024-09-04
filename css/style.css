@@ -176,9 +176,8 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1146px;
   margin: 0 auto;
-  padding: 0 147px;
 }
 
 .section__header {
@@ -206,20 +205,29 @@ body {
 /*header*/
 
 .header {
-  padding-top: 38px;
-  padding-bottom: 60px;
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__container {
   display: flex;
   align-items: center;
-  max-width: 1320px;
+  width: 1320px;
   margin: 0 auto;
 }
 
 .header__logo {
- margin-right: auto;
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 188%;
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin-right: auto;
 }
+
+
 
 .header__nav {
   margin-right: 36px;
@@ -230,11 +238,14 @@ body {
 }
 
 .header__nav-link {
+  position: relative;
   font-size: 16px;
   font-weight: 400;
-  line-height: auto;
+  line-height: 188%;
+  letter-spacing: 0.6px;
   color: var(--text-color);
 }
+
 
 .header__button {
   font-size: 13px;
@@ -251,8 +262,11 @@ body {
 /*hero*/
 
 .hero {
-  padding-top: 60px;
+  padding-top: 204px;
   padding-bottom: 89px;
+  background-image: url(../img/home/hero/joy_stick.png);
+  background-repeat: no-repeat;
+  background-position:  top 0 right 286px;
 }
 
 
