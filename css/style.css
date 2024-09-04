@@ -242,6 +242,23 @@ body {
   color: var(--text-color);
 }
 
+.header__nav-link::after {
+  position: absolute;
+  content: "";
+  left: -18px;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  background-image: url(../img/home/header/underline.png);
+  background-repeat: no-repeat;
+  transition: width 0.3s ease-in-out;
+}
+
+.header__nav-link:hover::after {
+  width: 39px;
+  transition: width 0.3s ease-in-out;
+}
+
 
 .header__button {
   font-size: 13px;
@@ -252,6 +269,12 @@ body {
   height: 41px;
   background-color: var(--light--accent-color);
   border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header__button:hover {
+  background-color: var(--dark-accent-color);
+  transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -309,6 +332,13 @@ body {
   color: var(--text-color);
   background-color: var(--light--accent-color);
   border-radius: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.hero__button:hover {
+  background-color: var(--dark-accent-color);
+  transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -366,8 +396,15 @@ body {
   text-transform: uppercase;
   background-color: rgba(225, 225, 225, 0.11);
   border-radius: 10px;
-
+  transition: background-color 0.3s ease-in-out;
 }
+
+.trends__button:hover {
+  background-color: rgba(225, 225, 225, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+
 
 .trends__list {
   gap: 46px;
@@ -587,6 +624,13 @@ body {
   text-transform: uppercase;
   background-color: rgba(225, 225, 225, 0.11);
   border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.projects__button:hover {
+  background-color: rgba(225, 225, 225, 0.5);
+  transition: background-color 0.3s ease-in-out;
 }
 
 /*subscription*/
@@ -676,6 +720,13 @@ body {
   color: var(--text-color);
   background-color: var(--dark-accent-color);
   border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.form__button:hover {
+  background-color: var(--light--accent-color);
+  transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -765,6 +816,12 @@ body {
   font-weight: 400;
   line-height: 186%;
   color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__nav-link:hover {
+  color: var(--light--accent-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .footer__socials {
