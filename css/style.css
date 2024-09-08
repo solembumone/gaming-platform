@@ -281,22 +281,69 @@ body {
 /*hero*/
 
 .hero {
-  padding-top: 204px;
+
   padding-bottom: 89px;
-  background-image: url(../img/home/hero/joy_stick.png);
+  /* background-image: url(../img/home/hero/joy_stick.png);
   background-repeat: no-repeat;
-  background-position:  top 0 right 24.5%;
+  background-position:  top 0 right 66px; */
 }
 
 
 .hero__container {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
+
 .hero__text {
+  position: relative;
+  padding-top: 204px;
+  margin-right: 98px;
   max-width: 527px;
   display: flex;
   flex-direction: column;
+}
+
+.hero__text::after{
+  position: absolute;
+  content: "";
+  width: 96px;
+  height: 30px;
+  top:53.5%;
+  right: -13.5%;
+  background-image: url(/img/home/hero/unity.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__background {
+  position: relative;
+}
+
+.hero__background::before {
+  position: absolute;
+  content: "";
+  width: 101px;
+  height: 76px;
+  top: 26.5%;
+  left: 13%;
+  background-image: url(/img/home/hero/cry.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__background::after {
+  position: absolute;
+  content: "";
+  width: 59px;
+  height: 64px;
+  top: 28.5%;
+  left: 90%;
+  background-image: url(/img/home/hero/unreal.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__title {

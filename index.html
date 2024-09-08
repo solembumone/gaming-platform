@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href=".css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>ПGaming platform</title>
+  <title>Gaming platform</title>
 </head>
 <body>
 
@@ -64,7 +64,10 @@
             Get more details
           </button>
         </div>
-        <div class="unity__icon">
+        <div class="hero__background">
+          <img src="./img/home/hero/joy_stick.png" alt="" class="hero__background-image">
+        </div>
+        <!-- <div class="unity__icon">
           <img src="./img/home/hero/unity 1.svg" alt="">
         </div>
         <div class="cry__icon">
@@ -72,7 +75,7 @@
         </div>
         <div class="unreal__icon">
           <img src="./img/home/hero/unreal 1.svg" alt="">
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -298,12 +301,12 @@
               Subscribe to&nbsp;receive the latest news and updates about TDA. We&nbsp;promise not to&nbsp;spam you!
             </div>
           </div>
-          <div class="form__right">
-            <input type="email" class="form__input" placeholder="Enter email address">
-            <button class="form__button btn-reset">
+          <form class="form__right" id="form">
+            <input id="email" type="email" class="form__input" placeholder="Enter email address">
+            <button type="submit" class="form__button btn-reset">
               Continue
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -403,5 +406,9 @@
       </div>
      </div>
   </footer>
+
+  <script src="script.js">
+
+  </script>
 </body>
 </html>
